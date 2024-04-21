@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* arkplan ayarları*/
+.main{
+    width: 100%;
+    background-color:rgb(255, 127, 127);
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+
+/* ekranda ki resmin ayarları */
+.foto{
+    width: 60%;
+    height:70%;
+    position: fixed;
+    top: 50%;
+    right: 1px;
+    transform: translateY(-40%);
+    bottom: 0;
+}
+.foto img{
+    position: absolute;
+    height: 100%;
+    right: 10%;
+    transform: translate(-10%);
+    bottom: 0;
+}
+
+
+/* navbar ayarları */
+.navbar{
+    width: 60%  ;
+    display: flex;
+    margin: auto;
+    padding: 35px 0;
+    text-align: center;
+    justify-content: space-between;
+}
+ul{
+    margin-top: 5%;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px 20px;
+}
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: cornsilk;
+}
+ul li a:hover{
+    color: rgb(35, 9, 3);
+}
+
+
+
+/* ekrandaki yazıların ayarları */
+.info{
+    margin-top: 100px;
+    padding-left: 4%;
+}
+.info h2{
+    font-size: 50px;
+    color: rgb(139, 0, 46);
+}
+.info h3{
+    font-size: 55px;
+    color: rgb(206, 8, 74);
+    letter-spacing: 3px;
+    line-height: 40px;
+}
+.info span{
+    color: rgba(85, 0, 28, 0.836);
+}
+
+
+/* navbar alt başlıklar */
+.sub-menu{
+    display: none;
+    position: relative;
+}
+.sub-menu ul{
+    position: absolute;
+}
+.main ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color:black;
+    margin-top: 12px;
+    margin-left: -8px;
+}
+.main ul li:hover .sub-menu ul{
+    display: block;
+    margin: 6px;
+}
+.main ul li:hover .sub-menu ul li{
+    width: 75px;
+    padding: 5px;
+    border-bottom: 1px black;
+    background: transparent;
+    transition: 0.4 ease;
+    text-align: left;
+    border-radius: 0px;
+}
+
+/* contact me yazısı ayarları */
+.btn{
+    border: 1px solid;
+    padding: 5px 15px;
+    color:rgb(159, 23, 23);
+    transition: 0.5 ease;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 80px;
+    margin-left: 23%;
+}
+.btn:hover{
+    background-color:rgb(189, 43, 80);
+    color: #fff;
+}
+
